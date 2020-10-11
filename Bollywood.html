@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" 
+rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css
+"> 
+
+<style>
+
+
+*{box-sizing: border-box;}
+
+.para{font-size: larger;}
+
+
+.pic{width: 50%;
+    height: 400px;
+    float: left;}
+
+
+ .pic::after{
+    clear: both;
+    content: "";
+    display: table; 
+} 
+
+.list{
+    font-family: 'Lobster', cursive;
+    font-size: larger;
+    display: inline-block;
+}
+
+.fieldForm{
+    border-radius: 20px;
+    width: 30%;
+    margin-bottom: 10px;
+    background-color: violet;
+}
+
+.pic{
+    width: 50%;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.input{
+    border-radius: 10px;
+    padding: 5px;}
+
+.input:focus{
+    color: white;
+    background-color: black;
+}
+
+.button{border-radius: 5px;}
+
+.table{
+    
+    border-collapse: collapse;
+    background-color: violet;
+    transition: 1s;
+    width: 50%;
+}
+
+.table tr,td,th{
+    padding: 10px 10px;
+   
+    
+}
+
+.table:hover{
+    color: white;
+    background-color: black;
+}
+
+.table tr:nth-child(even){
+    background-color: chocolate;
+}
+
+.table th{
+    text-align: left;
+}
+
+.pic-one{
+    float:right;
+}
+
+</style>
+</head>
+
+<body>
+    <h1 id="header"><i class="fab fa-bootstrap fa-1x"></i> Bollywood</h1>
+    
+    <button onclick="clickButton()" style="padding: 10px; border-radius: 10px; background-color: violet;">Click</button>
+    <input type="text" id="inputTest" style="padding: 10px; border-radius: 10px;" placeholder="Text Here!" autofocus>
+    
+    <big><p>I want you to name <q><u>This page header</u></q>.
+    Please, input the header you want, in <b> the blank</b> and then
+     <strong> click the button <u>above</u>.</strong></p></big>
+    
+    
+
+    <p class="para">This website will show the things about <q> Bollywood's actresses</q>.As you all know, 
+    Bollywood actresses have beautiful eyes,beautiful noses and beautiful faces.
+    By the way, my favorite actress is <del>Katrina Kaif</del> <b><em>
+     Shraddha Kapoor.</em></b> </p>
+
+    <div class="div">
+    <p >
+        <img src="fortest/shraddha-7.jpg" alt="beautiful girl" class="pic">
+        <ul  class="list">
+            <li>Nick Name:Chirkoot</li>
+            <li>Age:33</li>
+            <li>Eye color:Hazel Brown</li>
+            <li>Height:5'5"</li>
+            <li>Birth Place:Mumbi,India</li>
+            <li>College:Boston University,USA(Drop)</li>
+            <li>Body Measure:35-24-35</li>
+            <li>Film Debute:Teen Patti(2010)</li>
+            <li>Sign:<img src="fortest/sign.PNG" alt="sign" width="120px" height="80px"></li>
+            
+        </ul>
+    </p> 
+    </div>  
+    <br><br><br>
+    
+    <h3>Please, let me also know your <b>favorite actress.</b>
+        Input your favorite actress's name <b>in the blank</b> 
+        and then <b>click the button.</b> </h3>
+
+    <h3>My favorite actress is : <q id="favorite">Shraddha Kapoor &hearts; </q>  </h3>
+    <button onclick="clickFav()" style="background-color: violet; padding: 10px; border-radius: 10px;">Click me!</button>
+    <input type="text" id="fav-actress" style="padding: 10px; border-radius: 10px;" placeholder="Text Here!" >
+
+    <hr>    
+    <p>&nbsp;&nbsp;&nbsp; <strong>Shraddha is not only a good actress but also a good person.She went to <q> Sushant Singh Rajput</q> Furenal who committed suicide in May.
+    Most of superstars did not come to the Furenal.</strong> </p>
+
+    <div><q><strong>
+        I would like you to log in here to know that you are a Bollywood fan or not.</strong></q></div>
+    <br>
+    <div>
+    <fieldset class="fieldForm">
+        <legend style="text-align: center; font-size: larger;"><i class="fas fa-lock-open fa-1.5x fa-fw"></i> Registration Form</legend>
+        <form action="#" method="get" ></form>
+        <div>
+            <label for="form"><i class="fas fa-file-signature fa-1.5x fa-fw"></i> Your Name : </label> <br>
+            <input type="text" placeholder="First name" id="form" class="input" >
+            <input type="text" placeholder="Second name" class="input">
+        </div>
+        <div>
+            <label for=""><i class="fas fa-envelope fa-1.5x fa-fw"></i> Your Email: </label> <br>
+            <input type="email" placeholder="email" class="input">
+        </div>
+        <div>
+            <label for=""><i class="fas fa-flag fa-1.5x fa-fw"></i> Your Country: </label> <br>
+            <input type="text" placeholder="Country" class="input">
+        </div>
+        <div>
+            <label for=""><i class="fas fa-heart fa-1.5x fa-fw"></i> Favorite Actress</label> <br>
+            <input type="text" placeholder="Actress" class="input">
+        </div>
+        <div>
+            <label for=""><i class="fas fa-address-card fa-1.5x fa-fw"></i> Address: </label><br>
+            <textarea name="text" id="" cols="25" rows="10" class="input"></textarea>
+        </div>
+        <div>
+            <label for=""><i class="fas fa-registered fa-1.5x fa-spin"></i> Reg here</label>
+            <button type="submit">Click here!</button>
+        </div>
+</fieldset>
+</div>
+
+<h2>Please,<q>log-in</q> above for <i>these girls.</i> </h2>
+<img src="fortest/anaya 1.jpg" alt="" width="33%" height="450px" >
+<img src="fortest/Kat 3.jpg" alt="" width="33%" height="450px" >
+<img src="fortest/shraddha-6.jpg" alt="" width="33%" height="450px" >
+
+
+<p style="font-size: larger;">Would you like to see some of <q><b>Shraddha's music videos</b></q> ?
+Here are some videos of Shraddha. <i class="fas fa-hand-point-down fa-2x" ></i> </p>
+
+<video src="fortest/sh video 1.mp4" controls width="45%" height="400px" style="margin-right: 10px;">
+    <source media="(fortest/sh vieo 1.mp4)" srcset="" type="video/mp4">
+</video>
+    
+<video src="fortest/sh video 2.mp4" controls width="45%" height="400px">
+    <source media="(fortest/sh video 2.mp4)" srcset="" type="video/mp4">
+</video>
+<p><big> And I wanna share you <strong> the movies list </strong> of Shraddha.</big> </p>
+        
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LUmaWl4y4bU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><big>As final, I wanna share <q> the followers of Bollywood Actresses</q> </big>
+    </p>        
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Instagram followers <i class="fab fa-instagram-square fa-1.5x"></i> </th>
+        <th>Facebook followers <i class="fab fa-facebook fa-1.5x"></i></th>
+    </tr>
+    <tr>
+        <td>Shraddha Kapoor</td>
+        <td>55.9 Millions</td>
+        <td>17.34 Millions</td>
+    </tr>
+    <tr>
+        <td>Katrina Kaif</td>
+        <td>44.3 Millions</td>
+        <td>14.33 Millions</td>
+    </tr>
+    <tr>
+        <td>Deepika Padukone</td>
+        <td>52.4 Millions</td>
+        <td>33 Millions</td>
+    </tr>
+    <tr>
+        <td>Kareena Kapoor</td>
+        <td>4.5 Millions</td>
+        <td>1 Millions</td>
+    </tr>
+    <tr>
+        <td>Sara Ali Khan</td>
+        <td>28.6 Millions</td>
+        <td>No Facebook</td>
+    </tr>
+    <tr>
+        <td>Ananya Panday</td>
+        <td>14.7 Millions</td>
+        <td>658k</td>
+    </tr>
+</table>  
+<br>
+
+
+
+<script>
+    function clickButton(){
+        
+        let inputText =document.getElementById("inputTest");
+        let header = document.getElementById("header");
+        
+        header.innerHTML = inputText.value;
+        inputText.value="";
+    }
+
+    function clickFav( ){
+
+        let inputText = document.getElementById("fav-actress");
+        let header = document.getElementById("favorite");
+
+        header.innerHTML = inputText.value;
+        inputText.value="";
+
+       
+
+    }
+
+
+</script>
+
+
+
+
+
+    
+
+
+
+
+
+
+<br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+</html>
+ 
